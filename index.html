@@ -1,87 +1,96 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es"> <!--Para que el contenido de la página esté en Español-->
     
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
+    <meta charset="UTF-8"> <!-- Esto se asegura de que se usen todos los caracteres, como las tildes -->
+    <meta http-equiv="X-UA-Compatible" content="IE-edge"> <!-- Asegura que la página se vea correctamente en los navegadores más recientes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Esto ayuda a que la página se vea bien en teléfonos y otros dispositivos -->
 
 
     <link rel="preload" href="css/normalize.css" as="style">
-    <link rel="stylesheet" href="css/normalize.css" >   
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Krub:wght@200;400;700&display=swap" rel="stylesheet">
-
-    <link rel="preload" href="css/main.css" as="style">
-    <link rel="stylesheet" href="css/main.css">
-
-    <title>Document</title>
-
+    <link rel="stylesheet" href="css/normalize.css"> <!-- Este archivo hace que los elementos se vean de manera más consistente en diferentes navegadores -->
 
     
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Esto es para que se puedan utilizar las fuentes desde Google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@200;400;700&display=swap" rel="stylesheet">
+
+   
+    <link rel="preload" href="css/main.css" as="style">   <!-- Para que todo lo que se haga en CSS se vea reflejado -->
+    <link rel="stylesheet" href="css/main.css"> <!-- Este archivo tiene los estilos principales de la página -->
+
+    <title>Document</title> <!-- Aquí ponemos el título  -->
+
 </head>
 <body>
+
     <header>
         <nav>
-            <ul class="nav-right-section">
+            
+            <ul class="nav-right-section"> <!-- Una clase que abarca toda la parte derecha de arriba-->
                 <li>
-                    <a href="">Gmail</a>
+                    <a href="">Gmail</a> <!-- Enlace a la página de Gmail -->
                 </li>
                 <li>
-                    <a href="">Imágenes</a>
+                    <a href="">Imágenes</a> <!-- Enlace a la página de imágenes -->
                 </li>
                 <li>
-                    <div class="menu-icon" data-tooltip="Google Apps"></div>
+                    
+                    <div class="menu-icon" data-tooltip="Google Apps"></div> <!-- Icono de las aplicaciones de Google que cuenta con un tooltip para mostrar información-->
                 </li>
                 <li>
-                    <div class="foto-icon" data-tooltip="Gianna Bianchi Polanco"></div>
-                    <!--<img src="https://lh3.googleusercontent.com/ogw/AF2bZygRletnoN5wBzRRZhcVfCcRAaPBcWS79hfiXLMszN_9d8M=s32-c-mo" alt="" data-tooltip="Descripción aquí">-->
+                    
+                    <div class="foto-icon" data-tooltip="Gianna Bianchi Polanco"></div> <!-- Iconó de mi foto de Google (mi foto es de color blanco en la vida real) de Google que cuenta con un tooltip para mostrar información-->
+                    <!--<img src="..." alt="" data-tooltip="Descripción aquí">--> <!-- Es una alternativa de lo anterior -->
                 </li>
             </ul>
         </nav>
     </header>
 
-    <main class="busqueda">
-        <!-- Sección del logo -->
-        <section class="main-logo">
-        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"alt="">
+    <!-- La parte principal de la página -->
+    <main class="busqueda"><!-- La clase main que abarca todo desde el logo hasta los iconos y botones -->
+        
+        <section class="main-logo"><!-- Aquí está el logo de Google -->
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt=""> <!-- El logo de Google -->
         </section>
-        <!-- Sección del buscador -->
-        <section class="main-input">
-        <div class="main-input-container">
-        <!-- Logo de lupa -->
-        <span class="search-icon">
-        </span>
-        <!-- Es donde el usuario escribirá lo que desea buscar -->
-        <input type="text">
-        <!-- En el micrófono se usa anchor para simular el comportamiento de un
-        enlace -->
-        <a class="micro-icon" href="" data-tooltip="Búsqueda por voz"></a>
-        <a class="cama-icon" href="" data-tooltip="Búsqueda por imagen"></a>
-        </div>
+        
+       
+        <section class="main-input"> <!-- La clase main -->
+            <div class="main-input-container">
+                <span class="search-icon"></span> <!-- Este es el icono de la lupa  -->
+                <input type="text"> <!-- Aquí es donde el usuario puede escribir lo que quiere buscar -->
+                <a class="micro-icon" href="" data-tooltip="Búsqueda por voz"></a> <!-- Icono del micrófono de Google que cuenta con un tooltip para mostrar información-->
+                <a class="cama-icon" href="" data-tooltip="Búsqueda por imagen"></a> <!-- Icono de la cámara de Google que cuenta con un tooltip para mostrar información-->
+            </div>
         </section>
-        <!-- Sección de botones -->
-        <section class="main-buttons">
-        <div><button>Buscar con Google</button></div>
-        <div><button>Voy a tener suerte</button></div>
+
+        
+        <section class="main-buttons"> <!-- Clase que abarca los dos botones -->
+            <div><button>Buscar con Google</button></div> <!-- Botón para hacer una búsqueda normal -->
+            <div><button>Voy a tener suerte</button></div> <!-- Botón para hacer una búsqueda aleatoria -->
         </section>
     </main>
-    <footer class="footer-primary">
-        <p>México</p>
+
+    
+    <footer class="footer-primary"> <!-- Clase del footer en donde solo abarca la parte de arriba -->
+        <p>México</p> <!-- Texto del footer de arriba -->
     </footer>
-    <footer class="footer-secondary">
+
+    
+    <footer class="footer-secondary"> <!-- Clase del footer en donde solo abarca la parte de abajo -->
         <div class="nav-bg">
-            <nav class="navegacion-principal contenedor">
-                <div class="navegacion-izquierda">
+            <nav class="navegacion-principal contenedor"> <!-- Clase que abarca toda la información de todo el footer de abajo -->
+                <div class="navegacion-izquierda"> <!-- Clase del footer de abajo pero del lado izquierdo -->
+                    <!-- Estos son enlaces a diferentes páginas de Google -->
                     <a href="#">Sobre Google</a>
                     <a href="#">Publicidad</a>
                     <a href="#">Negocios</a>
                     <a href="#">Cómo funciona la búsqueda</a>
                 </div>
-                <div class="navegacion-derecha">
+                <div class="navegacion-derecha"> <!-- Clase del footer de abajo pero del lado derechos -->
+                    <!-- Enlaces a la privacidad, condiciones y configuración -->
                     <a href="#">Privacidad</a>
                     <a href="#">Condiciones</a>
                     <a href="#">Configuración</a>
@@ -90,6 +99,5 @@
         </div>
     </footer>
     
- 
 </body>
 </html>
